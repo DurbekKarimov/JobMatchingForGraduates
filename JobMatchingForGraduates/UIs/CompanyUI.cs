@@ -66,7 +66,7 @@ public class CompanyUI
                         dto.PhoneNumber = Console.ReadLine();
                         Console.Write("Enter the password: ");
                         dto.Password = Console.ReadLine();
-                        // StudentForResultDto result = await companyService.UpdateAsync(dto);
+                       // CompanyForResultDto result = await companyService.UpdateAsync(dto);
                         Console.Clear();
                         //Console.WriteLine($"{result.Id} | {result.FirstName} |{result.LastName} | {result.Direction} | {result.PhoneNumber}");
                     }

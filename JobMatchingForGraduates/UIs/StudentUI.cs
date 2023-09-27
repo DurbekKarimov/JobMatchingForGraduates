@@ -72,9 +72,9 @@ public class StudentUI
                         dto.PhoneNumber = Console.ReadLine();
                         Console.Write("Enter the password: ");
                         dto.Password = Console.ReadLine();
-                        // StudentForResultDto result = await studentService.UpdateAsync(dto);
+                        StudentForResultDto result = await studentService.UpdateAsync(dto);
                         Console.Clear();
-                        //Console.WriteLine($"{result.Id} | {result.FirstName} |{result.LastName} | {result.Direction} | {result.PhoneNumber}");
+                        Console.WriteLine($"{result.Id} | {result.FirstName} |{result.LastName} | {result.Direction} | {result.PhoneNumber}");
                     }
                     catch (JobMatchingException exp)
                     {
