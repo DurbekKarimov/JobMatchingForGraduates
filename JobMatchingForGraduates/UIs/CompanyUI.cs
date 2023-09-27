@@ -8,7 +8,7 @@ namespace JobMatchingForGraduates.Presentation.UIs;
 
 public class CompanyUI
 {
-    ICompanyService companyService = new CompanyService();
+    CompanyService companyService = new CompanyService();
     CompanyForCreationDto companyForCreationDto = new CompanyForCreationDto();
 
     public async Task Print()
@@ -66,7 +66,7 @@ public class CompanyUI
                         dto.PhoneNumber = Console.ReadLine();
                         Console.Write("Enter the password: ");
                         dto.Password = Console.ReadLine();
-                       // StudentForResultDto result = await companyService.UpdateAsync(dto);
+                        // StudentForResultDto result = await companyService.UpdateAsync(dto);
                         Console.Clear();
                         //Console.WriteLine($"{result.Id} | {result.FirstName} |{result.LastName} | {result.Direction} | {result.PhoneNumber}");
                     }
